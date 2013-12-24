@@ -1,0 +1,27 @@
+/*Navigation*/
+
+.menu {
+	header &{
+		@extend %flexbox;
+	}
+	section &{
+    @extend %flex;
+    li {
+        background: $bare;
+        @extend %flex;
+    }
+    a {
+
+        padding: $s;
+        display: block;
+        border-right: 1px solid $pale;
+        /*&:last-of-type{
+        	border-right:none;
+        }*/
+
+        &:hover {
+            background: $pale;
+        }
+    }
+}
+}
